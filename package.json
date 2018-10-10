@@ -30,6 +30,9 @@
         "react": "^15.0.0 || ^16.0.0",
         "react-dom": "^15.0.0 || ^16.0.0"
     },
+    "dependencies": {
+        "js-cookie": "^2.2.0"
+    },
     "devDependencies": {
         "@babel/core": "^7.1.2",
         "@babel/plugin-proposal-class-properties": "^7.1.0",
