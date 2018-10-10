@@ -1,0 +1,34 @@
+.cookies-consent {
+    font-size: larger;
+    position: fixed;
+    z-index: 1000000;
+    background: #F2F2F2;
+    text-align: center;
+    border-top: 0.0625rem solid #E4E4E4;
+    line-height: 2.5rem;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 0 0.3125rem;
+}
+
+.cookies-consent-text {
+    padding: 0 0.3125rem;
+}
+
+.cookies-consent-button {
+    font-size: 0.68rem;
+    font-weight: bold;
+    line-height: 1.25rem;
+    min-width: 1.625rem;
+    margin-left: 0.3125rem;
+    padding: 0.125rem 0.68rem;
+    cursor: pointer;
+    text-align: center;
+    white-space: nowrap;
+    color: #FFFFFF;
+    border: 0;
+    outline: none;
+    background-color: black !important;
+    border-radius: 0.3125rem;
+}
