@@ -34,8 +34,10 @@ class Example extends Component {
 
 ## Available props
 
-* `message` (Default value: 'Cookies help us deliver our services. By using our services, you agree to our use of cookies.')
-* `buttonMessage` (Default value: 'OK')
+* `cookiesId` Value with which the cookie will be save in the browser: (Type: `String`, Default value: 'cookies-consent')
+* `message` Message that will be show to the user: (Type `String`, Default value: 'Cookies help us deliver our services. By using our services, you agree to our use of cookies.')
+* `buttonMessage` Text of the submit action button: (Type: `String`, Default value: 'OK')
+* `expiresIn` Time needed for the cookie to expire: (Type: `Number`, Default value: 365)
 
 ## Styling
  
