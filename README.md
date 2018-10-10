@@ -52,4 +52,4 @@ class Example extends Component {
 
 ## License
 
-MIT © [ing the application use of cookies](https://github.com/ing the application use of cookies)
+@cuban-engineer/react-cookies-consent is [MIT-licensed](https://github.com/aleph-engineering/react-cookies-consent/blob/master/LICENSE).
