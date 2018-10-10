@@ -12,7 +12,9 @@
         "lint": "eslint src/",
         "lint:report": "eslint -f json -o eslint/report.json src/",
         "build": "rollup -c",
-        "build:watch": "rollup -c -w"
+        "build:watch": "rollup -c -w",
+        "publish": "--access public",
+        "prepublish": "npm run clean && npm run test && npm run lint && npm run build"
     },
     "keywords": ["react"],
     "author": "",
