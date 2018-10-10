@@ -4,6 +4,7 @@ import {
     COOKIES_CONSENT_DEFAULT_MESSAGE,
     COOKIES_CONSENT_BUTTON_MESSAGE,
     COOKIES_ID,
+    COOKIES_EXPIRES,
 } from './constants';
 import CookiesConsent from '.';
 
@@ -28,17 +29,20 @@ describe('Suite of tests for the CookiesConsent component', () => {
         );
 
         expect(wrapper.props().cookieId).toBe(COOKIES_ID);
+        expect(wrapper.props().expiresIn).toBe(COOKIES_EXPIRES);
     });
 
     test('CookiesConsent component should render messages passed as a prop', () => {
         const cookieIdText = 'my-unique-id';
         const cookiesConsentText = 'We use cookies';
         const cookiesConsentButtonText = 'Accept';
+        const cookiesConsentExpiresIn = 7;
         const wrapper = mount(
             <CookiesConsent
                 message={cookiesConsentText}
                 buttonMessage={cookiesConsentButtonText}
                 cookieId={cookieIdText}
+                expiresIn={cookiesConsentExpiresIn}
             />
         );
 
@@ -57,5 +61,6 @@ describe('Suite of tests for the CookiesConsent component', () => {
         );
 
         expect(wrapper.props().cookieId).toBe(cookieIdText);
+        expect(wrapper.props().expiresIn).toBe(cookiesConsentExpiresIn);
     });
 });

@@ -5,6 +5,7 @@ import {
     COOKIES_CONSENT_BUTTON_MESSAGE,
     COOKIES_CONSENT_DEFAULT_MESSAGE,
     COOKIES_ID,
+    COOKIES_EXPIRES,
 } from './constants';
 import './styles.css';
 
@@ -29,8 +30,8 @@ export default class CookiesConsent extends Component {
     };
 
     handleConsentAccepted = () => {
-        const { cookieId } = this.props;
-        Cookies.set(cookieId, 'true');
+        const { cookieId, expiresIn } = this.props;
+        Cookies.set(cookieId, 'true', { expires: expiresIn });
         this.enableCookiesConsent();
     };
 
@@ -61,10 +62,12 @@ CookiesConsent.propTypes = {
     cookieId: PropTypes.string,
     message: PropTypes.string,
     buttonMessage: PropTypes.string,
+    expiresIn: PropTypes.number,
 };
 
 CookiesConsent.defaultProps = {
     cookieId: COOKIES_ID,
     message: COOKIES_CONSENT_DEFAULT_MESSAGE,
     buttonMessage: COOKIES_CONSENT_BUTTON_MESSAGE,
+    expiresIn: COOKIES_EXPIRES,
 };
