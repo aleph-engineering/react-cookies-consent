@@ -6,6 +6,7 @@
     "module": "lib/index.es.js",
     "jsnext:main": "lib/index.es.js",
     "scripts": {
+        "clean": "rimraf lib",
         "test": "jest",
         "test:coverage": "jest --coverage",
         "lint": "eslint src/",
