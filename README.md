@@ -37,6 +37,15 @@ class Example extends Component {
 * `message` (Default value: 'Cookies help us deliver our services. By using our services, you agree to our use of cookies.')
 * `buttonMessage` (Default value: 'OK')
 
+## Styling
+ 
+ By default the rendered component will be fixed at the bottom and will look like this:
+ 
+ But the styles can be modified by overriding this `css` classes:
+ 1. `.cookies-consent`: Entire Component container.
+ 2. `.cookies-consent-text`: Container of the message showed to the user.
+ 3. `.cookies-consent-button` Container of the Button for accepting the use of cookies.  
+
 ## License
 
 MIT © [ing the application use of cookies](https://github.com/ing the application use of cookies)
