@@ -43,7 +43,7 @@ class Example extends Component {
  
  By default the rendered component will be fixed at the bottom and will look like this:
  
- ![React Cookies Consent Component](react-cookies-consent.png)
+ ![React Cookies Consent Component](https://github.com/aleph-engineering/react-cookies-consent/blob/master/react-cookies-consent.png)
  
  But the styles can be modified by overriding this `css` classes:
  1. `.cookies-consent`: Entire Component container.
