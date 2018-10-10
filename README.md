@@ -43,6 +43,8 @@ class Example extends Component {
  
  By default the rendered component will be fixed at the bottom and will look like this:
  
+ ![React Cookies Consent Component](react-cookies-consent.png)
+ 
  But the styles can be modified by overriding this `css` classes:
  1. `.cookies-consent`: Entire Component container.
  2. `.cookies-consent-text`: Container of the message showed to the user.
