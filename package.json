@@ -1,6 +1,6 @@
 {
     "name": "@cuban-engineer/react-cookies-consent",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "React component for the managing the user awareness regarding cookies usage",
     "main": "lib/index.js",
     "module": "lib/index.es.js",

@@ -36,13 +36,22 @@ export default class CookiesConsent extends Component {
     };
 
     render() {
-        const { message, buttonMessage } = this.props;
+        const { message, buttonMessage, link } = this.props;
         const { cookiesConsent } = this.state;
         return (
             <div>
                 {cookiesConsent === false && (
                     <div className="cookies-consent">
                         <span className="cookies-consent-text">{message}</span>
+                        {link &&
+                            link.url &&
+                            link.text && (
+                                <span className="cookies-consent-link">
+                                    <a href={link.url} target={link.target}>
+                                        {link.text}
+                                    </a>
+                                </span>
+                            )}
                         <span>
                             <button
                                 type="button"
@@ -63,6 +72,11 @@ CookiesConsent.propTypes = {
     message: PropTypes.string,
     buttonMessage: PropTypes.string,
     expiresIn: PropTypes.number,
+    link: PropTypes.shape({
+        url: PropTypes.string,
+        text: PropTypes.string,
+        target: PropTypes.string,
+    }),
 };
 
 CookiesConsent.defaultProps = {
@@ -70,4 +84,9 @@ CookiesConsent.defaultProps = {
     message: COOKIES_CONSENT_DEFAULT_MESSAGE,
     buttonMessage: COOKIES_CONSENT_BUTTON_MESSAGE,
     expiresIn: COOKIES_EXPIRES,
+    link: {
+        url: undefined,
+        text: undefined,
+        target: '_blank',
+    },
 };

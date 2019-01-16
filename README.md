@@ -38,6 +38,7 @@ class Example extends Component {
 * `message` Message that will be show to the user: (Type `String`, Default value: 'Cookies help us deliver our services. By using our services, you agree to our use of cookies.')
 * `buttonMessage` Text of the submit action button: (Type: `String`, Default value: 'OK')
 * `expiresIn` Time needed for the cookie to expire: (Type: `Number`, Default value: 365)
+* `link` Link for more information pages: (Type: `Object`, Default values: { url: undefined, text: undefined, target: '_blank'})
 
 ## Styling
  
@@ -49,6 +50,7 @@ class Example extends Component {
  1. `.cookies-consent`: Entire Component container.
  2. `.cookies-consent-text`: Container of the message showed to the user.
  3. `.cookies-consent-button` Container of the Button for accepting the use of cookies.  
+ 4. `.cookies-consent-link` Container of the `a` tag for the link.  
 
 ## License
 
